@@ -4,7 +4,6 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -29,8 +28,6 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -44,12 +41,31 @@
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+A very simple calculator application by using React.
+
+### Milestone-1
+
+* Create new React Application,
+* Remove unnecessary assets and create initial assets,
+* Install big.js and prop-types packages by using npm,
+* Set up code linters
+
+### Milestone-2
+
+* Create Button, ButtonPanel, App, and Display components.
+* Add a little bit of styling to make it seem good.
+
+### Milestone-3
+
+### Milestone-4
+
+### Milestone-5
+
 ### Built With
+
 Components of this project is listed below;
 
 * Javascript - ES6
@@ -57,20 +73,18 @@ Components of this project is listed below;
 * [VsCode](https://code.visualstudio.com/)
 * [EsLint](https://eslint.org/)
 
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
 This project has been deployed on heroku as an application, you can visit the app on heroku to use on your browser.
 
 If you want to download and try the application in your local,
-  * Setup NodeJs on your local machine from https://nodejs.org/en/,
-  * Clone the project into your local machine,
-  * By using proper command shell, get into the application folder and use "npm install" to install the components,
-  * Use "npm run start" to start the application in your local machine,
-  * Open your browser and visit the "localhost/8080" to use the application.
 
+* Setup NodeJs on your local machine from <https://nodejs.org/en/>,
+* Clone the project into your local machine,
+* By using proper command shell, get into the application folder and use "npm install" to install the components,
+* Use "npm run start" to start the application in your local machine,
+* Open your browser and visit the "localhost/8080" to use the application.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -79,10 +93,9 @@ If you want to download and try the application in your local,
 
 👤 **İlhan Sönmez**
 
-- Github: [Github Repository](https://github.com/300ms)
-- Twitter: [@twitterhandle](https://twitter.com/cse_Han)
-- Linkedin: [linkedin](https://www.linkedin.com/in/ilhan-s%C3%B6nmez/)
-
+* Github: [Github Repository](https://github.com/300ms)
+* Twitter: [@twitterhandle](https://twitter.com/cse_Han)
+* Linkedin: [linkedin](https://www.linkedin.com/in/ilhan-s%C3%B6nmez/)
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -95,22 +108,17 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License.
 
-
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
+
 * [Microverse Education](https://microverse.org)
 * [GitHub](https://github.com/)
 * [ReactJs](https://reactjs.org/)
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
