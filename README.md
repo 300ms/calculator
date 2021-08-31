@@ -32,6 +32,12 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+  * [Milestones](#milestones)
+    * [Milestone-1](#milestone-1)
+    * [Milestone-2](#milestone-2)
+    * [Milestone-3](#milestone-3)
+    * [Milestone-4](#milestone-4)
+    * [Milestone-5](#milestone-5)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
 * [Usage](#usage)
@@ -46,25 +52,27 @@
 
 A very simple calculator application by using React.
 
-### Milestone-1
+### Milestones
+
+#### Milestone-1
 
 * Create new React Application,
 * Remove unnecessary assets and create initial assets,
 * Install big.js and prop-types packages by using npm,
 * Set up code linters
 
-### Milestone-2
+#### Milestone-2
 
 * Create Button, ButtonPanel, App, and Display components.
 * Add a little bit of styling to make it seem good.
 
-### Milestone-3
+#### Milestone-3
 
-### Milestone-4
+#### Milestone-4
 
-### Milestone-5
+#### Milestone-5
 
-### Built With
+#### Built With
 
 Components of this project is listed below;
 
