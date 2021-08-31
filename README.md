@@ -12,7 +12,7 @@
 
   <h3 align="center">React&Redux Calculator Project</h3>
   <p align="center">
-    <img src="https://ibb.co/Fzsw8mW" alt="Logo" width="240" height="240">
+    <img src="https://i.ibb.co/GRs2CnJ/calculator.png" alt="Logo" width="240" height="240">
   </p>
   <p align="center">
     Microverse Full-Stack Web Development Education
