@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from './Button';
 
+const orange = '#f5913e';
+
 const renderButton = (value, bgColor, width) => (
   <Button
     value={value}

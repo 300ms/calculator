@@ -20,13 +20,6 @@
   background-color: var(--dark-gray);
 }
 
-.display {
-  color: white;
-  float: right;
-  font-weight: bold;
-  font-size: 5rem;
-}
-
 .button-row {
   width: 100%;
   height: 100px;
@@ -37,7 +30,6 @@
   height: 100%;
   border: 1px solid var(--border);
   background-color: var(--light-gray);
-  font-size: 1rem;
 }
 
 .button-orange {
