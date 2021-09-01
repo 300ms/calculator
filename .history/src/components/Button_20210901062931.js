@@ -31,7 +31,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   value: '',
-  bgColor: '',
+  bgColor: lightGray,
   width: true,
 };
 

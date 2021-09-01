@@ -26,16 +26,6 @@
 }
 
 .button {
-  width: 25%;
   height: 100%;
   border: 1px solid var(--border);
-  background-color: var(--light-gray);
-}
-
-.button-orange {
-  background-color: var(--orange);
-}
-
-.button-big {
-  width: 50%;
 }

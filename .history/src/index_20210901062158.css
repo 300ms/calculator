@@ -26,16 +26,22 @@
 }
 
 .button {
-  width: 25%;
   height: 100%;
   border: 1px solid var(--border);
-  background-color: var(--light-gray);
 }
 
 .button-orange {
   background-color: var(--orange);
 }
 
+.button-LightGray {
+  background-color: var(--light-gray);
+}
+
 .button-big {
   width: 50%;
+}
+
+.button-small {
+  width: 25%;
 }

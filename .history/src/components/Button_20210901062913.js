@@ -10,11 +10,7 @@ const Button = (props) => {
     className += ' button-lightGray';
   }
 
-  if (width) {
-    className += ' button-big';
-  } else {
-    className += ' button-small';
-  }
+  (width) ? className += ' button-big' : className += ' button-small';
 
   return (
     <button className={className} type="button">
@@ -31,7 +27,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   value: '',
-  bgColor: '',
+  bgColor: lightGray,
   width: true,
 };
 

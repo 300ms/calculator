@@ -2,22 +2,9 @@ import PropTypes from 'prop-types';
 
 const Button = (props) => {
   const { value, bgColor, width } = props;
-  let className = 'button';
-
-  if (bgColor === 'orange') {
-    className += ' button-orange';
-  } else {
-    className += ' button-lightGray';
-  }
-
-  if (width) {
-    className += ' button-big';
-  } else {
-    className += ' button-small';
-  }
 
   return (
-    <button className={className} type="button">
+    <button className="button" type="button" style={{ backgroundColor: bgColor, width: `${width}%` }}>
       {value}
     </button>
   );
@@ -31,8 +18,8 @@ Button.propTypes = {
 
 Button.defaultProps = {
   value: '',
-  bgColor: '',
-  width: true,
+  bgColor: '#e0e0e0',
+  width: 25,
 };
 
 export default Button;
