@@ -75,6 +75,16 @@ const calculate = (obj, buttonName) => {
     return {};
   }
 
+  if (buttonName === '%') {
+    if (obj.total) {
+      return { total: (parseFloat(obj.total) / 100).toString() };
+    }
+
+    if (obj.next) {
+      return { next: (parseFloat(obj.next) / 100).toString() };
+    }
+  }
+
   if (!obj.next && !obj.total) {
     return {};
   }

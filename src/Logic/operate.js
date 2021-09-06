@@ -15,9 +15,6 @@ const operate = (number1, number2, operation) => {
   if (operation === '÷') {
     return numberOne.div(numberTwo).toString();
   }
-  if (operation === '%') {
-    return numberOne.mod(numberTwo).toString();
-  }
   throw Error(`Unknown operation '${operation}'`);
 };
 

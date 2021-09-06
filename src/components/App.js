@@ -25,7 +25,7 @@ export default class App extends React.Component {
     const { total, next } = this.state;
     return (
       <>
-        <div className="display-container"><Display value={total || next || '0'} /></div>
+        <div className="display-container"><Display value={next || total || '0'} /></div>
         <div className="button-panel-container"><ButtonPanel onClick={this.handleClick} /></div>
       </>
     );
