@@ -30,7 +30,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  value: '',
+  value: null,
   bgColor: 'lightGray',
   width: false,
 };
