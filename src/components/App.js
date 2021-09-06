@@ -1,32 +1,33 @@
-import PropTypes from 'prop-types';
+import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import Calculate from '../Logic/calculate';
 
-export default function App(props) {
-  const {
-    total, next, operation, buttonName,
-  } = props;
-  const obj = { total, next, operation };
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <>
-      <div className="display-container"><Display /></div>
-      <div className="button-panel-container"><ButtonPanel onClick={Calculate(obj, buttonName)} /></div>
-    </>
-  );
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(buttonName) {
+    const newState = Calculate(this.state, buttonName);
+    this.setState(newState);
+  }
+
+  render() {
+    const { total, next } = this.state;
+    return (
+      <>
+        <div className="display-container"><Display value={total || next || '0'} /></div>
+        <div className="button-panel-container"><ButtonPanel onClick={this.handleClick} /></div>
+      </>
+    );
+  }
 }
-
-App.propTypes = {
-  total: PropTypes.string,
-  next: PropTypes.string,
-  operation: PropTypes.string,
-  buttonName: PropTypes.string,
-};
-
-App.defaultProps = {
-  total: '',
-  next: '',
-  operation: '',
-  buttonName: '',
-};

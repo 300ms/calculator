@@ -1,8 +1,14 @@
 import PropTypes from 'prop-types';
 
 const Button = (props) => {
-  const { value, bgColor, width } = props;
+  const {
+    value, bgColor, width, onClick,
+  } = props;
   let className = 'button';
+
+  const handleClick = () => {
+    onClick(value);
+  };
 
   if (bgColor === 'orange') {
     className += ' button-orange';
@@ -17,7 +23,7 @@ const Button = (props) => {
   }
 
   return (
-    <button className={className} type="button">
+    <button className={className} type="button" onClick={handleClick}>
       {value}
     </button>
   );
@@ -27,12 +33,14 @@ Button.propTypes = {
   value: PropTypes.string,
   bgColor: PropTypes.string,
   width: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
   value: null,
   bgColor: 'lightGray',
   width: false,
+  onClick: () => {},
 };
 
 export default Button;
