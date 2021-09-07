@@ -5,6 +5,10 @@ function isNumber(item) {
 }
 
 const calculate = (obj, buttonName) => {
+  if (obj.total === 'Infinity') {
+    obj.total = '0'; // eslint-disable-line no-param-reassign
+  }
+
   if (buttonName === 'AC') {
     return {
       total: null,
