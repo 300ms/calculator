@@ -68,9 +68,17 @@ A very simple calculator application by using React.
 
 #### Milestone-3
 
+* Add styling
+
 #### Milestone-4
 
+* Implement logic module "calculate.js"
+* Implement logic module "operate.js"
+
 #### Milestone-5
+
+* Tie the calculations module with the components
+* Add the interaction to the buttons
 
 #### Built With
 
