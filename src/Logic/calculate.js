@@ -5,6 +5,10 @@ function isNumber(item) {
 }
 
 const calculate = (obj, buttonName) => {
+  if (obj.total === 'Infinity') {
+    obj.total = '0'; // eslint-disable-line no-param-reassign
+  }
+
   if (buttonName === 'AC') {
     return {
       total: null,
@@ -73,6 +77,16 @@ const calculate = (obj, buttonName) => {
       return { total: (-1 * parseFloat(obj.total)).toString() };
     }
     return {};
+  }
+
+  if (buttonName === '%') {
+    if (obj.total) {
+      return { total: (parseFloat(obj.total) / 100).toString() };
+    }
+
+    if (obj.next) {
+      return { next: (parseFloat(obj.next) / 100).toString() };
+    }
   }
 
   if (!obj.next && !obj.total) {

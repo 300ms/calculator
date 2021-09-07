@@ -9,14 +9,14 @@ const operate = (number1, number2, operation) => {
   if (operation === '-') {
     return numberOne.minus(numberTwo).toString();
   }
-  if (operation === 'x') {
+  if (operation === 'X') {
     return numberOne.times(numberTwo).toString();
   }
   if (operation === '÷') {
+    if (number2 === '0') {
+      return 'Infinity';
+    }
     return numberOne.div(numberTwo).toString();
-  }
-  if (operation === '%') {
-    return numberOne.mod(numberTwo).toString();
   }
   throw Error(`Unknown operation '${operation}'`);
 };
