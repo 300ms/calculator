@@ -23,8 +23,6 @@
     <a href="https://react-calculator-app-h4n.herokuapp.com/">View Demo</a>
     ·
     <a href="https://github.com/300ms/calculator/issues">Report Bug & Request Feature</a>
-    .
-    <a href=""> Short Video instruction </a>
   </p>
 </p>
 
