@@ -23,9 +23,11 @@ const calculate = (obj, buttonName) => {
     }
     if (obj.operation) {
       if (obj.next) {
-        return { next: obj.next + buttonName };
+        obj.next += buttonName; // eslint-disable-line no-param-reassign
+        return obj;
       }
-      return { next: buttonName };
+      obj.next = buttonName; // eslint-disable-line no-param-reassign
+      return obj;
     }
     if (obj.next) {
       return {
@@ -94,7 +96,8 @@ const calculate = (obj, buttonName) => {
   }
 
   if (!obj.next) {
-    return { operation: buttonName };
+    obj.operation = buttonName; // eslint-disable-line no-param-reassign
+    return obj;
   }
 
   if (obj.operation) {
